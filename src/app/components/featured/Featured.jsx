@@ -6,8 +6,7 @@ export const Featured = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <b>Hey there.</b> Welcome to my merge of communication and tech,{" "}
-        <b>enjoy!</b>
+        <b>Hey there.</b> Welcome to my world, <b>enjoy!</b>
       </h1>
       <div className={styles.post}>
         <div className={styles.imgContainer}>
