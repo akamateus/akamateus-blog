@@ -10,10 +10,8 @@
 }
 
 .ball {
-  width: 21px;
-  height: 21px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background-color: white;
   position: absolute;
-  left: 1px;
 }

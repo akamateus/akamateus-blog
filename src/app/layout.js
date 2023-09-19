@@ -3,6 +3,7 @@ import { Footer } from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import ThemeProvider from "@/providers/ThemeProvider";
 
 const pjs = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -16,13 +17,15 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={pjs.className}>
         <ThemeContextProvider>
-          <div className="container">
-            <div className="wrapper">
-              <Navbar />
-              {children}
-              <Footer />
+          <ThemeProvider>
+            <div className="container">
+              <div className="wrapper">
+                <Navbar />
+                {children}
+                <Footer />
+              </div>
             </div>
-          </div>
+          </ThemeProvider>
         </ThemeContextProvider>
       </body>
     </html>
