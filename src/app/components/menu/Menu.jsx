@@ -11,12 +11,13 @@ export const Menu = () => {
       <h2 className={styles.subtitle}>{"Best content"}</h2>
       <h1 className={styles.title}>Most Popular</h1>
       <MenuPosts withImage={false} />
-      {/* Another section 🔦🔦🔦🔦🔦*/}
+      {/* Another section 🔦*/}
 
       <h2 className={styles.subtitle}>Discover by topic</h2>
       <h1 className={styles.title}>Categories</h1>
       <MenuCategories />
-      {/* Another section 🔦🔦🔦🔦🔦*/}
+
+      {/* Another section 🔦*/}
       <h2 className={styles.subtitle}>Chosen by Matt</h2>
       <h1 className={styles.title}>Editors pick</h1>
       <MenuPosts withImage={true} />
