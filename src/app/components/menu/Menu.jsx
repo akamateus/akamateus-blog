@@ -32,8 +32,8 @@ export const Menu = () => {
             <Image className={styles.image} src="/p1.jpeg" alt="" fill />
           </div>
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.travel}`}>
-              Travel
+            <span className={`${styles.category} ${styles.culture}`}>
+              Culture
             </span>
             <h3 className={styles.postTitle}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
@@ -50,9 +50,7 @@ export const Menu = () => {
             <Image className={styles.image} src="/p1.jpeg" alt="" fill />
           </div>
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.travel}`}>
-              Travel
-            </span>
+            <span className={`${styles.category} ${styles.food}`}>Food</span>
             <h3 className={styles.postTitle}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
             </h3>
@@ -68,8 +66,8 @@ export const Menu = () => {
             <Image className={styles.image} src="/p1.jpeg" alt="" fill />
           </div>
           <div className={styles.textContainer}>
-            <span className={`${styles.category} ${styles.travel}`}>
-              Travel
+            <span className={`${styles.category} ${styles.fashion}`}>
+              Fashion
             </span>
             <h3 className={styles.postTitle}>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem.

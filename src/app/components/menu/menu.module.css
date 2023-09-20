@@ -49,8 +49,18 @@
 }
 
 .category.travel {
-  background-color: rgb(229, 143, 63);
+  background-color: rgb(255, 142, 142);
 }
+.category.culture {
+  background-color: rgb(255, 164, 99);
+}
+.category.food {
+  background-color: rgb(254, 126, 237);
+}
+.category.fashion {
+  background-color: rgb(118, 220, 216);
+}
+
 .postTitle {
   font-size: 18px;
   font-weight: 500;
