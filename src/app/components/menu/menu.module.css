@@ -14,6 +14,11 @@
 }
 
 .items {
+  margin-top: 35px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
 }
 
 .item {
@@ -58,7 +63,7 @@
   background-color: rgb(254, 126, 237);
 }
 .category.fashion {
-  background-color: rgb(118, 220, 216);
+  background-color: rgb(171, 219, 217);
 }
 
 .postTitle {
