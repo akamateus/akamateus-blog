@@ -3,6 +3,7 @@ import styles from "./menu.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import MenuPosts from "../menu-posts/MenuPosts";
+import MenuCategories from "../menu-categories/MenuCategories";
 
 export const Menu = () => {
   return (
@@ -14,50 +15,7 @@ export const Menu = () => {
 
       <h2 className={styles.subtitle}>Discover by topic</h2>
       <h1 className={styles.title}>Categories</h1>
-      <div className={styles.categoryList}>
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.categoryItem} ${styles.style}`}
-        >
-          Style
-        </Link>
-
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.categoryItem} ${styles.food}`}
-        >
-          Food
-        </Link>
-
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.categoryItem} ${styles.travel}`}
-        >
-          Travel
-        </Link>
-
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.categoryItem} ${styles.culture}`}
-        >
-          Culture
-        </Link>
-
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.categoryItem} ${styles.fashion}`}
-        >
-          Fashion
-        </Link>
-
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.categoryItem} ${styles.coding}`}
-        >
-          Coding
-        </Link>
-      </div>
-
+      <MenuCategories />
       {/* Another section 🔦🔦🔦🔦🔦*/}
       <h2 className={styles.subtitle}>Chosen by Matt</h2>
       <h1 className={styles.title}>Editors pick</h1>
