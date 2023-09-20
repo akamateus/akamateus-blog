@@ -26,6 +26,60 @@ export const Menu = () => {
             </div>
           </div>
         </Link>
+
+        <Link href="/" className={styles.item}>
+          <div className={styles.imageContainer}>
+            <Image className={styles.image} src="/p1.jpeg" alt="" fill />
+          </div>
+          <div className={styles.textContainer}>
+            <span className={`${styles.category} ${styles.travel}`}>
+              Travel
+            </span>
+            <h3 className={styles.postTitle}>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+            </h3>
+            <div className={styles.detail}>
+              <span className={styles.username}>Matt Oliver</span>
+              <span className={styles.date}> - 10.12.2023</span>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/" className={styles.item}>
+          <div className={styles.imageContainer}>
+            <Image className={styles.image} src="/p1.jpeg" alt="" fill />
+          </div>
+          <div className={styles.textContainer}>
+            <span className={`${styles.category} ${styles.travel}`}>
+              Travel
+            </span>
+            <h3 className={styles.postTitle}>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+            </h3>
+            <div className={styles.detail}>
+              <span className={styles.username}>Matt Oliver</span>
+              <span className={styles.date}> - 10.12.2023</span>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/" className={styles.item}>
+          <div className={styles.imageContainer}>
+            <Image className={styles.image} src="/p1.jpeg" alt="" fill />
+          </div>
+          <div className={styles.textContainer}>
+            <span className={`${styles.category} ${styles.travel}`}>
+              Travel
+            </span>
+            <h3 className={styles.postTitle}>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem.
+            </h3>
+            <div className={styles.detail}>
+              <span className={styles.username}>Matt Oliver</span>
+              <span className={styles.date}> - 10.12.2023</span>
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
