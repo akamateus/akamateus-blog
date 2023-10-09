@@ -26,7 +26,7 @@ const SinglePage = () => {
       </div>
 
       <div className={styles.content}>
-        <div className={styles.post}></div>
+        x<div className={styles.post}></div>
         <Menu />
       </div>
     </div>
