@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./singlePage.module.css";
 import Menu from "../components/menu/Menu";
 import Image from "next/image";
+import Comments from "../components/comments/Comments";
 
 const SinglePage = () => {
   return (
@@ -51,6 +52,9 @@ const SinglePage = () => {
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
             </p>
+          </div>
+          <div className={styles.comment}>
+            <Comments />
           </div>
         </div>
         <Menu />
