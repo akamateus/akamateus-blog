@@ -11,14 +11,14 @@ const SinglePage = () => {
         <div className={styles.textContainer}>
           <h1 className={styles.title}>
             {" "}
-            loren papa dhdu wubk caca pipuro mamagito ainda fhsu.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </h1>
           <div className={styles.user}>
             <div className={styles.userImageContainer}>
               <Image src="/p1.jpeg" alt="" fill className={styles.avatar} />
             </div>
             <div className={styles.userTextContainer}>
-              <span className={styles.username}> John Doe</span>
+              <span className={styles.username}> Matt Oliver</span>
               <span className={styles.date}> 01.01.2023</span>
             </div>
           </div>
