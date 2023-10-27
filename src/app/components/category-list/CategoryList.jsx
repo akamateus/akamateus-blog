@@ -3,88 +3,45 @@ import styles from "./category-list.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-import { GiLightBackpack } from "react-icons/gi";
-import { GiClothes } from "react-icons/gi";
-import { PiBowlFoodFill } from "react-icons/pi";
-import { GiWorld } from "react-icons/gi";
-import { FaPeopleRoof } from "react-icons/fa6";
-import { GiLaptop } from "react-icons/gi";
+const getData = async () => {
+  const res = await fetch("http://localhost:3000/api/categories", {
+    cache: "no-store",
+  });
 
-export const CategoryList = () => {
+  if (!res.ok) {
+    throw new Error("Failed");
+  }
+
+  return res.json();
+};
+
+const CategoryList = async () => {
+  const data = await getData();
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>My Articles</h1>
       <div className={styles.categories}>
-        <Link
-          href="/blog?cat=style"
-          className={`${styles.category} ${styles.style}`}
-        >
-          {/* <Image
-            src="/style.png"
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          /> */}
-          <GiLightBackpack
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Style
-        </Link>
-
-        <Link
-          href="/blog?cat=fashion"
-          className={`${styles.category} ${styles.fashion}`}
-        >
-          <GiClothes alt="" width={32} height={32} className={styles.image} />
-          Fashion
-        </Link>
-
-        <Link
-          href="/blog?cat=food"
-          className={`${styles.category} ${styles.food}`}
-        >
-          <PiBowlFoodFill
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Food
-        </Link>
-
-        <Link
-          href="/blog?cat=travel"
-          className={`${styles.category} ${styles.travel}`}
-        >
-          <GiWorld alt="" width={32} height={32} className={styles.image} />
-          Travel
-        </Link>
-
-        <Link
-          href="/blog?cat=culture"
-          className={`${styles.category} ${styles.culture}`}
-        >
-          <FaPeopleRoof
-            alt=""
-            width={32}
-            height={32}
-            className={styles.image}
-          />
-          Culture
-        </Link>
-
-        <Link
-          href="/blog?cat=coding"
-          className={`${styles.category} ${styles.coding}`}
-        >
-          <GiLaptop alt="" width={32} height={32} className={styles.image} />
-          Coding
-        </Link>
+        {data?.map((item) => (
+          <Link
+            href="/blog?cat=style"
+            className={`${styles.category} ${[item.slug]}`}
+            key={item._id}
+          >
+            {item.img && (
+              <Image
+                src={item.image}
+                alt=""
+                width={32}
+                height={32}
+                className={styles.image}
+              />
+            )}
+            {item.title}
+          </Link>
+        ))}
       </div>
     </div>
   );
 };
+export default CategoryList;
