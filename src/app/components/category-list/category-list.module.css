@@ -24,27 +24,31 @@
 }
 
 .category.style {
-  background-color: rgb(178, 227, 255);
+  background-color: #57c4ff31;
 }
-.category.travel {
-  background-color: rgb(255, 142, 142);
-}
-.category.culture {
-  background-color: rgb(255, 164, 99);
-}
-.category.food {
-  background-color: rgb(254, 126, 237);
-}
+
 .category.fashion {
-  background-color: rgb(171, 219, 217);
+  background-color: #da85c731;
 }
+
+.category.food {
+  background-color: #7fb88133;
+}
+
+.category.travel {
+  background-color: #ff795736;
+}
+
+.category.culture {
+  background-color: #ffb04f45;
+}
+
 .category.coding {
-  background-color: rgb(194, 192, 255);
+  background-color: #5e4fff31;
 }
 
 .image {
-  /* border-radius: 50%; */
-  font-size: 30px;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 1280px) {
@@ -62,7 +66,6 @@
     width: 45%;
   }
 }
-
 @media screen and (max-width: 640px) {
   .category {
     width: 100%;
